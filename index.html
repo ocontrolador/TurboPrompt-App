@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboPrompt App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TurboPrompt: Turbine seus Prompts</h1>
+        
+        <!-- Campo pra API Key -->
+        <label for="api-key">Chave API do Grok (opcional):</label>
+        <input type="text" id="api-key" placeholder="Insira sua chave API aqui">
+        
+        <!-- Campo pro prompt original -->
+        <label for="prompt-input">Prompt Original:</label>
+        <textarea id="prompt-input" placeholder="Digite seu prompt aqui..."></textarea>
+        
+        <!-- Botões -->
+        <button id="turbinar-btn">Turbinar Prompt</button>
+        <button id="limpar-btn">Limpar</button>
+        <button id="toggle-theme">Alternar Tema (Dark/Light)</button>
+        
+        <!-- Saída das sugestões -->
+        <div id="output">
+            <h2>Sugestões Melhoradas:</h2>
+            <div id="sugestoes"></div>
+        </div>
+        
+        <!-- Histórico -->
+        <div id="historico">
+            <h2>Histórico de Prompts:</h2>
+            <ul id="historico-list"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
