@@ -10,10 +10,6 @@
     <div class="container">
         <h1>TurboPrompt: Turbine seus Prompts</h1>
         
-        <!-- Campo pra API Key -->
-        <label for="api-key">Chave API do Grok (opcional):</label>
-        <input type="text" id="api-key" placeholder="Insira sua chave API aqui">
-        
         <!-- Campo pro prompt original -->
         <label for="prompt-input">Prompt Original:</label>
         <textarea id="prompt-input" placeholder="Digite seu prompt aqui..."></textarea>
@@ -27,6 +23,16 @@
         <div id="output">
             <h2>Sugestões Melhoradas:</h2>
             <div id="sugestoes"></div>
+            <!-- Exportação em batch -->
+            <div id="export-options" style="display: none; margin-top: 20px;">
+                <label for="export-format">Formato:</label>
+                <select id="export-format">
+                    <option value="txt">TXT</option>
+                    <option value="md">MD</option>
+                    <option value="json">JSON</option>
+                </select>
+                <button id="export-btn">Exportar Tudo</button>
+            </div>
         </div>
         
         <!-- Histórico -->
